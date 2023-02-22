@@ -6,28 +6,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WebStudio</title>
-  <link href="./css/styles.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
   <link href="
     https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
-    " rel="stylesheet">">
+    " rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
   <header class="page-header">
-    <div class="container">
-      <nav >
+    <div class="container main-nav">
+      <nav class="nav">
         <a class="logo" href="./index.html">Web<span class="logo-studio">Studio</span></a>
-        <ul class="nav">
+        <ul class="nav-list">
           <li class="nav-link"><a href="./index.html">Studio</a></li>
           <li class="nav-link"><a href="./portfolio.html">Portfolio</a></li>
           <li class="nav-link"><a href="">Contacts</a></li>
         </ul>
       </nav>
 
-      <address>
-        <ul class="contacts">
+      <address class="contacts">
+        <ul class="contacts-list">
           <li class="nav-contacts"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
           <li class="nav-contacts"><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
@@ -42,7 +42,7 @@
 
 
   <main>
-    <section class="section1">
+    <section class="section-hero">
       <h1 class="text-main">
         Effective Solutions
         for Your Business
@@ -51,81 +51,81 @@
     </section>
 
     <section class="section">
-      <div class="container">
-        <h2 class="visually-hidden">Goals</h2>
-        <ul class="goals">
-          <li class="goals-item">
-            <h3 class="quality">Strategy</h3>
-            <p class="quality-description">
-              Our goal is to identify the business problem to walk away with the
-              perfect and creative solution.
-            </p>
-          </li>
-          <li class="goals-item">
-            <h3 class="quality">Punctuality</h3>
-            <p class="quality-description">
-              Bring the key message to the brand's audience for the best price
-              within the shortest possible time.
-            </p>
-          </li>
-          <li class="goals-item">
-            <h3 class="quality">Diligence</h3>
-            <p class="quality-description">
-              Research and confirm brands that present the strongest digital
-              growth opportunities and minimize risk.
-            </p>
-          </li>
-          <li class="goals-item">
-            <h3 class="quality">Technologies</h3>
-            <p class="quality-description">
-              Design practice focused on digital experiences. We bring forth a
-              deep passion for problem-solving.
-            </p>
-          </li>
-        </ul>
+      <!-- <div class="container"> -->
+      <h2 class="visually-hidden">Goals</h2>
+      <ul class="goals">
+        <li class="goals-item">
+          <h3 class="quality">Strategy</h3>
+          <p class="quality-description">
+            Our goal is to identify the business problem to walk away with the
+            perfect and creative solution.
+          </p>
+        </li>
+        <li class="goals-item">
+          <h3 class="quality">Punctuality</h3>
+          <p class="quality-description">
+            Bring the key message to the brand's audience for the best price
+            within the shortest possible time.
+          </p>
+        </li>
+        <li class="goals-item">
+          <h3 class="quality">Diligence</h3>
+          <p class="quality-description">
+            Research and confirm brands that present the strongest digital
+            growth opportunities and minimize risk.
+          </p>
+        </li>
+        <li class="goals-item">
+          <h3 class="quality">Technologies</h3>
+          <p class="quality-description">
+            Design practice focused on digital experiences. We bring forth a
+            deep passion for problem-solving.
+          </p>
+        </li>
+      </ul>
       </div>
 
     </section>
     <section class="section">
       <h2 class="heading1">What are we doing</h2>
-      <ul>
-        <li>
-          <img src=".imgs/rectangle7111.jpg" alt="computer" width="360">
+      <ul class="example">
+        <li class="example-list">
+          <img src="./imgs/rectangle7111.jpg" alt="computer" width="360">
         </li>
-        <li>
-          <img src="./images/rectangle7112.jpg" alt="layers" width="360">
+        <li class="example-list">
+          <img src="./imgs/rectangle7112.jpg" alt="layers" width="360">
         </li>
-        <li>
-          <img src="./images/rectangle7123.jpg" alt="application" width="360">
+        <li class="example-list">
+          <img src="./imgs/rectangle7123.jpg" alt="application" width="360">
         </li>
       </ul>
     </section>
 
     <section class="section bg-color">
-      <div class="container"></div>
-      <h2 class="heading1">Our Team</h2>
-      <ul>
-        <li>
-          <img src="./imgs/mark1.jpg" alt="mark" width="264">
-          <h3 class="name">Mark Guerrero</h3>
-          <p class="specialist">Product Designer</p>
-        </li>
-        <li>
-          <img src="./imgs/tom1.jpg" alt="tom" width="264">
-          <h3 class="name">Tom Ford</h3>
-          <p class="specialist">Frontend Developer</p>
-        </li>
-        <li>
-          <img src="./imgs/camila1.jpg" alt="camila" width="264">
-          <h3 class="name">Camila Garcia</h3>
-          <p class="specialist">Marketing</p>
-        </li>
-        <li>
-          <img src="./imgs/daniel1.jpg" alt="daniel" width="264">
-          <h3 class="name">Daniel Wilson</h3>
-          <p class="specialist">UI Designer </p>
-        </li>
-      </ul>
+      <div>
+        <h2 class="heading1">Our Team</h2>
+        <ul class="projects">
+          <li class="people">
+            <img src="./imgs/mark1.jpg" alt="mark" width="264">
+            <h3 class="name">Mark Guerrero</h3>
+            <p class="specialist">Product Designer</p>
+          </li>
+          <li class="people">
+            <img src="./imgs/tom1.jpg" alt="tom" width="264">
+            <h3 class="name">Tom Ford</h3>
+            <p class="specialist">Frontend Developer</p>
+          </li>
+          <li class="people">
+            <img src="./imgs/camila1.jpg" alt="camila" width="264">
+            <h3 class="name">Camila Garcia</h3>
+            <p class="specialist">Marketing</p>
+          </li>
+          <li class="people">
+            <img src="./imgs/daniel1.jpg" alt="daniel" width="264">
+            <h3 class="name">Daniel Wilson</h3>
+            <p class="specialist">UI Designer </p>
+          </li>
+        </ul>
       </div>
     </section>
 
