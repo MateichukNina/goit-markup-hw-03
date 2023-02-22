@@ -320,6 +320,7 @@ address {
     letter-spacing: 0.02em;
     color: #E7E9FC;
     width: 264px;
+    margin-top: 16px;
 
 
 
@@ -338,6 +339,8 @@ address {
     margin-right: auto;
     align-items: center;
 
+    padding-top: 100px;
+    padding-bottom: 100px;
 
 
 }
