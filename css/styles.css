@@ -6,15 +6,6 @@
     --border-bg-color: #F4F4FD;
 }
 
-html {
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
 
 /* Загал */
 
@@ -22,24 +13,21 @@ body {
     font-family: "Roboto", sans-serif;
     color: var(--secondare-font-color);
     background: var(--main-light-color);
-    margin: 0%;
+
 }
 
 
 ul {
     list-style: none;
-    display: flex;
-
+    padding: 0%;
+    margin: 0%;
 }
 
 a {
     text-decoration: none;
 }
 
-li {
-    background-color: var(--main-light-color);
-    display: flex;
-}
+
 
 h1,
 h2,
@@ -96,29 +84,16 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-font-color);
-
-
-
-
-
 }
 
 
-.nav a:hover {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
-}
-
+.nav a:hover,
 .nav a:focus {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
     color: var(--accent-color);
 }
+
+
+
 
 .contacts a {
     font-weight: 400;
@@ -128,25 +103,14 @@ address {
     color: var(--main-font-color);
     /* display: inline-block; */
     margin: 0%;
-
-
 }
 
-.contacts a:hover {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
-}
-
+.contacts a:hover,
 .contacts a:focus {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
     color: var(--accent-color);
 }
+
+
 
 /* Студіо */
 
@@ -163,6 +127,7 @@ address {
 
     color: var(--accent-color);
     cursor: pointer;
+    padding: 12px 24px;
 
 }
 
@@ -170,6 +135,8 @@ address {
 .btn:focus {
     background-color: var(--accent-color);
     color: var(--main-light-color);
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
 
 }
 
@@ -182,6 +149,8 @@ address {
 
     letter-spacing: 0.02em;
     color: var(--main-font-color);
+    margin-bottom: 8px;
+    
 }
 
 .servise-list {
@@ -198,10 +167,11 @@ address {
     margin-top: 0%;
 
     background: var(--main-font-color);
-    width: 1440px;
+
 
     text-align: center;
-    margin-bottom: 120px;
+    padding-top: 188px;
+    padding-bottom: 188px;
 
 
 
@@ -218,16 +188,13 @@ address {
     line-height: 1.5;
     /* identical to box height, or 150% */
     letter-spacing: 0.04em;
-
+    padding: 16px 32px;
+    border-radius: 4px;
     color: var(--main-light-color);
     background: var(--accent-color);
     cursor: pointer;
-    border-radius: 4px;
-    margin-bottom: 188px;
-
-
-
-
+    border: 1px solid transparent;
+   
 
 
 
@@ -245,17 +212,11 @@ address {
 
     font-size: 56px;
     line-height: 1.07;
-    /* or 107% */
-
     text-align: center;
     letter-spacing: 0.02em;
 
     color: var(--main-light-color);
-
-    padding-top: 188px;
-    PADDING-bottom: 48px;
-
-    width: 511px;
+    width: 496px;
     margin: 0 auto 48px;
 
 
@@ -269,7 +230,8 @@ address {
     text-transform: capitalize;
     color: var(--main-font-color);
     padding-top: 0%;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
+    text-align: center;
 
 
 
@@ -282,6 +244,7 @@ address {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--main-font-color);
+    margin-bottom: 8px;
 
 }
 
@@ -291,6 +254,7 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondare-font-color);
+    
 
 }
 
@@ -300,7 +264,7 @@ address {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--main-font-color);
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .quality-description {
@@ -330,14 +294,11 @@ address {
     background: var(--main-font-color);
     margin-top: 0%;
     margin-bottom: 0;
-    width: 1128px;
-    padding-left: 15px;
-    padding-right: 15px;
 
 
     margin-left: auto;
     margin-right: auto;
-    align-items: center;
+
 
     padding-top: 100px;
     padding-bottom: 100px;
@@ -369,27 +330,12 @@ address {
 
 }
 
-.container {
-    width: 1128px;
-    padding-left: 15px;
-    padding-right: 15px;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-
-    display: flex;
-    text-align: center;
 
 
-}
+
 
 .page-header {
-    margin: 0%;
-    border-bottom: 1px #E7E9FC;
-    align-items: center;
-    display: flex;
-    width: 1128px;
-
+    border-bottom: 1px solid #E7E9FC;
 
 }
 
@@ -429,25 +375,12 @@ address {
 
 }
 
-.btn-profile {
-    display: flex;
-    margin-right: 24px;
-    align-items: center;
-    justify-content: center;
-
-
-}
-
 .projects {
-    width: 1128px;
-    padding-left: 15px;
-    padding-right: 15px;
-
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
+   
+    display: flex;
     flex-wrap: wrap;
-
+    margin-top: -24px;
+    margin-left: -24px;
 }
 
 
@@ -455,11 +388,13 @@ address {
     background: var(--main-light-color);
     display: inline;
 
-    flex-basis: calc(100% / 3);
-    padding-bottom: 48px;
-    padding-left: 24px;
-    margin-left: -24px;
-    border-bottom: 1px #E7E9FC;
+    flex-basis: calc(100%  / 3 - 24px);
+    margin-top: 24px;
+
+    margin-left: 24px;
+
+   
+
 }
 
 .specialist-person {
@@ -472,15 +407,19 @@ address {
     align-items: center;
     flex-wrap: wrap;
 
+
 }
 
 .specialist-person-icon {
     /* flex-basis: calc(100% / 4); */
     display: inline;
+
 }
 
 .nav-link {
     margin-right: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .nav-link:last-child {
@@ -493,6 +432,9 @@ address {
 
 .nav-contacts {
     margin-right: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
 }
 
 .nav-contacts:last-child {
@@ -501,18 +443,25 @@ address {
 
 .container {
     width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
     align-items: center;
+    padding: 0 15px;
+    margin: 0% auto;
 
-    justify-content: center;
-    display: flex;
-    text-align: center;
 }
 
+
 .section {
+
+
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+
+}
+
+.section-work {
     justify-content: space-between;
-    width: 1128px;
+
     padding-left: 15px;
     padding-right: 15px;
     align-items: center;
@@ -521,85 +470,118 @@ address {
     margin-right: auto;
 
     margin-bottom: 0%;
-
     padding-bottom: 120px;
     text-align: center;
-
 }
 
 .bg-color {
     background-color: var(--border-bg-color);
     padding-top: 120px;
+
 }
 
 .goals {
     display: flex;
     align-items: center;
-    justify-content: center;
-
-    width: 1128px;
-    padding-left: 15px;
-    padding-right: 15px;
-
-    margin-left: auto;
-    margin-right: auto;
-
-
+    padding: 0%;
 
 }
 
 .goals-item {
     text-align: left;
-    align-items: center;
-    justify-content: center;
-    display: inline;
-
-    flex-basis: calc(100% / 4);
-    padding-bottom: 48px;
-    justify-content: space-between;
-    padding-left: 0%;
+    flex-basis: calc(100% - 72px / 4);
     margin-right: 24px;
+}
 
+.goals-item:last-child {
 
+    margin-right: 0%;
 }
 
 .example {
     align-items: center;
     padding-left: 0;
     justify-self: start;
+    display: flex;
 }
 
 .example-list {
-    padding-right: 24px;
+    margin-right: 24px;
 }
 
 .example-list:last-child {
-    padding-right: 0;
+    margin-right: 0;
 }
 
 .people {
 
     display: inline;
 
-    flex-basis: calc(100% / 4);
-    padding-bottom: 48px;
+    flex-basis: calc(100%-72px / 4);
     justify-content: space-between;
+    margin-right: 24px;
 
+}
+
+.people:last-child {
+    margin-right: 0%;
 }
 
 .main-nav {
     display: flex;
-    /* padding-top: 24px;
-    padding-bottom: 24px; */
+
 
 }
 
 .nav-list {
     margin-left: 76px;
+    display: flex;
 
 }
 
-.contacts {
+.contacts-list {
     display: flex;
+}
+
+.contacts {
     margin-left: auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-right: 0%;
+}
+
+.nav-profile {
+    display: flex;
+    margin-bottom: 72px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn-profile {
+   margin-right: 24px;
+}
+
+.btn-profile:last-child{
+    margin-right: 0%;
+}
+
+.name-specialist {
+    padding: 32px 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.servises{
+    padding: 32px 0px;
+    border-left: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC ;
 }
