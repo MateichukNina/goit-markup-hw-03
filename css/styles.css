@@ -307,7 +307,7 @@ address {
 }
 
 .logo-footer {
-    color: #E7E9FC;
+    color: var(--border-bg-color);
 
 }
 
