@@ -379,7 +379,7 @@ address {
    
     display: flex;
     flex-wrap: wrap;
-    margin-top: -24px;
+    margin-top: -48px;
     margin-left: -24px;
 }
 
@@ -389,7 +389,7 @@ address {
     display: inline;
 
     flex-basis: calc(100%  / 3 - 24px);
-    margin-top: 24px;
+    margin-top: 48px;
 
     margin-left: 24px;
 
@@ -417,9 +417,11 @@ address {
 }
 
 .nav-link {
-    margin-right: 40px;
+   
     padding-top: 24px;
     padding-bottom: 24px;
+    display: block;
+   
 }
 
 .nav-link:last-child {
@@ -431,9 +433,10 @@ address {
 
 
 .nav-contacts {
-    margin-right: 40px;
+   
     padding-top: 24px;
     padding-bottom: 24px;
+    display: block;
 
 }
 
@@ -507,6 +510,7 @@ address {
 
 .example-list {
     margin-right: 24px;
+    width: 360px;
 }
 
 .example-list:last-child {
@@ -517,9 +521,14 @@ address {
 
     display: inline;
 
-    flex-basis: calc(100%-72px / 4);
+    flex-basis: calc(100% - 72px / 4);
     justify-content: space-between;
     margin-right: 24px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+    background: #FFFFFF;
 
 }
 
@@ -539,8 +548,18 @@ address {
 
 }
 
+.nav-list:last-child{
+   margin-right: 0%;
+}
+
+
+
 .contacts-list {
     display: flex;
+}
+
+.contacts-list:last-child{
+    margin-right: 0%;
 }
 
 .contacts {
@@ -572,17 +591,15 @@ img {
 
 .name-specialist {
     padding: 32px 16px;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
     text-align: center;
 }
 
 .servises{
-    padding: 32px 0px 32px 16px;
+    padding: 32px 16px 32px 16px;
     border-left: 1px solid #E7E9FC;
     border-right: 1px solid #E7E9FC;
     border-bottom: 1px solid #E7E9FC ;
+}
+.list{
+    margin-right: 40px;
 }
