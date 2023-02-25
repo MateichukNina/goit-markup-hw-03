@@ -602,3 +602,7 @@ img {
 .list {
     margin-right: 40px;
 }
+
+.projects-people{
+    display: flex;
+}
